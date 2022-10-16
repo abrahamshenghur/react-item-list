@@ -48,7 +48,8 @@ const Content = () => {
                             <label style={(item.checked) ? { textDecoration: 'line-through' } : null}>
                                     {item.item}
                             </label>
-                            <FaTrashAlt 
+                            <FaTrashAlt
+                                onClick={() => handleDelete(item.id)}
                                 role='button' 
                                 tabIndex='0'
                             />
