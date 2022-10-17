@@ -1,39 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
 import { FaTrashAlt } from 'react-icons/fa'
 
-const Content = () => {
-    const [items, setItems] = useState([
-        {
-            id: 1,
-            checked: true,
-            item: "Four tires and brake pads"
-        },
-        {
-            id: 2,
-            checked: false,
-            item: "Alternator"
-        },
-        {
-            id: 3,
-            checked: false,
-            item: "Radiator"
-        }
-    ])
-    
-    const handleCheck = (id) => {
-        const listItems = items.map((item) => item.id === id ? { ...item, checked: !item.checked } : item);
-        setItems(listItems);
-        localStorage.setItem('shoppingList', JSON.stringify(listItems))
-    }
-
-    // call this function after installing react-icons package and using the trash icon
-    const handleDelete = (id) => {
-        const listItems = items.filter((item) => item.id !== id);
-        setItems(listItems)
-        localStorage.setItem('shoppingList', JSON.stringify(listItems))
-    }
-      
+const Content = ({ items, handleCheck, handleDelete }) => {
     return (
         <main>
             {items.length ? (
