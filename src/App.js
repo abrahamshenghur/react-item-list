@@ -37,8 +37,11 @@ function App() {
     localStorage.setItem('shoppingList', JSON.stringify(listItems))
   }
 
-  const handleSubmit = () => {
-    console.log('submitted')
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (!newItem) return
+    // addItem
+    setNewItem('')
   }
 
   return (
