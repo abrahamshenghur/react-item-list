@@ -23,23 +23,32 @@ function App() {
     }
   ])
 
+  const [newItem, setNewItem] = useState('')
+
   const handleCheck = (id) => {
     const listItems = items.map((item) => item.id === id ? { ...item, checked: !item.checked } : item);
     setItems(listItems);
     localStorage.setItem('shoppingList', JSON.stringify(listItems))
   }
 
-  // call this function after installing react-icons package and using the trash icon
   const handleDelete = (id) => {
     const listItems = items.filter((item) => item.id !== id);
     setItems(listItems)
     localStorage.setItem('shoppingList', JSON.stringify(listItems))
   }
 
+  const handleSubmit = () => {
+    console.log('submitted')
+  }
+
   return (
     <div className="App">
       <Header title="Parts List" />
-      <AddItem />
+      <AddItem
+        newItem={newItem}
+        setNewItem={setNewItem}
+        handleSubmit={handleSubmit} 
+      />
       <Content
         items={items}
         handleCheck={handleCheck}
