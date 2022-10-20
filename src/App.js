@@ -5,23 +5,7 @@ import Footer from './Footer';
 import { useState } from 'react'
 
 function App() {
-  const [items, setItems] = useState([
-    {
-      id: 1,
-      checked: true,
-      item: "Four tires and brake pads"
-    },
-    {
-      id: 2,
-      checked: false,
-      item: "Alternator"
-    },
-    {
-      id: 3,
-      checked: false,
-      item: "Radiator"
-    }
-  ])
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppingList')))
 
   const [newItem, setNewItem] = useState('')
 
