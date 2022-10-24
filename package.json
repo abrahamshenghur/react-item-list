@@ -1,7 +1,7 @@
 {
   "name": "react-item-list",
   "version": "0.1.0",
-  "homepage": "https://github.com/abrahamshenghur/react-item-list",
+  "homepage": "https://abrahamshenghur.github.io/react-item-list",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
