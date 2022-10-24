@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/abrahamshenghur/react-item-list/static/css/main.d245b3a5.css",
+    "main.js": "/abrahamshenghur/react-item-list/static/js/main.20b81bc3.js",
+    "index.html": "/abrahamshenghur/react-item-list/index.html",
+    "main.d245b3a5.css.map": "/abrahamshenghur/react-item-list/static/css/main.d245b3a5.css.map",
+    "main.20b81bc3.js.map": "/abrahamshenghur/react-item-list/static/js/main.20b81bc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d245b3a5.css",
+    "static/js/main.20b81bc3.js"
+  ]
+}
