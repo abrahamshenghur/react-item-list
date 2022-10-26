@@ -1,0 +1,20 @@
+
+{
+    "items": [
+        {
+            "id": 1,
+            "checked": false,
+            "item": "Tires"
+        },
+        {
+            "id": 2,
+            "checked": false,
+            "item": "Brakes"
+        },
+        {
+            "id": 3,
+            "checked": false,
+            "item": "Rotors"
+        }
+    ]
+}
